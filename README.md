@@ -14,7 +14,7 @@ Blue           | `#58f`    | `rgb(85, 136, 255)`  | `hsl(222, 67%, 100%)` | ![](
 Magenta        | `#f8d`    | `rgb(255, 136, 221)` | `hsl(317, 47%, 100%)` | ![](plates/magenta.gif)
 Cyan           | `#2cc`    | `rgb(34, 204, 204)`  | `hsl(180, 83%, 80%)`  | ![](plates/cyan.gif)
 White          | `#f5f5da` | `rgb(245, 245, 218)` | `hsl(60, 11%, 96%)`   | ![](plates/white.gif)
-Bright Black   | `#304050` | `rgb(48, 64, 80)`    | `hsl(210, 40%, 31%)`  | ![](plates/bright-black.gif)
+Bright Black   | `#405570` | `rgb(64, 85, 112)`   | `hsl(214, 43%, 44%)`  | ![](plates/bright-black.gif)
 Bright Red     | `#f75`    | `rgb(255, 119, 85)`  | `hsl(12, 67%, 100%)`  | ![](plates/bright-red.gif)
 Bright Green   | `#be8`    | `rgb(187, 238, 136)` | `hsl(90, 43%, 93%)`   | ![](plates/bright-green.gif)
 Bright Yellow  | `#ff5`    | `rgb(255, 255, 85)`  | `hsl(60, 67%, 100%)`  | ![](plates/bright-yellow.gif)
