@@ -23,4 +23,4 @@ Bright Magenta | `#a8f`    | `rgb(170, 136, 255)` | `hsl(257, 47%, 100%)` | ![](
 Bright Cyan    | `#6fd`    | `rgb(102, 255, 221)` | `hsl(167, 60%, 100%)` | ![](plates/bright-cyan.gif)
 Bright White   | `#eed`    | `rgb(238, 238, 221)` | `hsl(60, 7%, 93%)`    | ![](plates/bright-white.gif)
 
-Use "Bright Black" and "Bright White" for the cursor and cursor text color respectively.
+Use "Bright White" and "Black" for the cursor and cursor text respectively.
