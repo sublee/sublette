@@ -4,7 +4,7 @@ A terminal color scheme.
 
 Color          | Hex       | RGB                  | HSL                   |🎨
 -------------- | --------- | -------------------- | --------------------- | --------------------------
-Foreground     | `#ddd`    | `rgb(221, 221, 221)` | `hsl(0, 0%, 87%)`     | ![](plates/foreground.gif)
+Foreground     | `#ccc`    | `rgb(204, 204, 204)` | `hsl(0, 0%, 80%)`     | ![](plates/foreground.gif)
 Background     | `#202530` | `rgb(32, 37, 48)`    | `hsl(221, 33%, 19%)`  | ![](plates/background.gif)
 Black          | `#253040` | `rgb(37, 48, 64)`    | `hsl(216, 42%, 25%)`  | ![](plates/black.gif)
 Red            | `#e57`    | `rgb(238, 85, 119)`  | `hsl(347, 64%, 93%)`  | ![](plates/red.gif)
