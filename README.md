@@ -1,4 +1,4 @@
-# sublette
+# Sublette
 
 A terminal color scheme.
 
