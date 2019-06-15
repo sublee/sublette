@@ -24,3 +24,11 @@ Bright Cyan    | `#5fb`    | `rgb(85, 255, 187)`  | `hsl(156, 67%, 100%)` | ![](
 Bright White   | `#ffe`    | `rgb(255, 255, 238)` | `hsl(60, 7%, 100%)`   | ![](plates/bright-white.gif)
 
 Use "Foreground" and "Background" for the cursor and cursor text respectively.
+
+## Screenshots
+
+![](codesnippets/torchgpipe.py.png)
+
+![](codesnippets/subl.ee.html.png)
+
+![](codesnippets/hangulize-specs.go.png)
