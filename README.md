@@ -8,7 +8,7 @@ Foreground     | `#ccced0` | `rgb(204, 206, 208)` | `hsl(210, 2%, 82%)`   | ![](
 Background     | `#202535` | `rgb(32, 37, 53)`    | `hsl(226, 40%, 21%)`  | ![](plates/background.gif)
 Black          | `#253045` | `rgb(37, 48, 69)`    | `hsl(219, 46%, 27%)`  | ![](plates/black.gif)
 Red            | `#e57`    | `rgb(238, 85, 119)`  | `hsl(347, 64%, 93%)`  | ![](plates/red.gif)
-Green          | `#5d7`    | `rgb(85, 221, 119)`  | `hsl(135, 62%, 87%)`  | ![](plates/green.gif)
+Green          | `#5e7`    | `rgb(85, 238, 119)`  | `hsl(133, 64%, 93%)`  | ![](plates/green.gif)
 Yellow         | `#fd8`    | `rgb(255, 221, 136)` | `hsl(43, 47%, 100%)`  | ![](plates/yellow.gif)
 Blue           | `#58f`    | `rgb(85, 136, 255)`  | `hsl(222, 67%, 100%)` | ![](plates/blue.gif)
 Magenta        | `#f7c`    | `rgb(255, 119, 204)` | `hsl(322, 53%, 100%)` | ![](plates/magenta.gif)
