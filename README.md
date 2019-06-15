@@ -25,10 +25,10 @@ Bright White   | `#ffe`    | `rgb(255, 255, 238)` | `hsl(60, 7%, 100%)`   | ![](
 
 Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
-## Screenshots
+## Showcase
 
-![](codesnippets/torchgpipe.py.png)
+![](showcase/torchgpipe.py.png)
 
-![](codesnippets/subl.ee.html.png)
+![](showcase/subl.ee.html.png)
 
-![](codesnippets/hangulize-specs.go.png)
+![](showcase/hangulize-specs.go.png)
