@@ -31,23 +31,32 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 ## For Slides
 
-Terminal and slides have different purpose. For slides, we need only few colors
-with clear meaning. This color scheme defines new foreground, background, and
-brightness normalized colors for slides.
+The purpose of a color scheme for Terminal and Slides is different. I need only
+4 grayscale colors for text and background, and 6 hues--Blue, Red, Yellow,
+Green, Violet, Teal--for clear semantics.
 
-- I prefer the black and white as default colors on projection screens. It
-  erases the bezel and provides the best readability.
-- Yellow and Green in the terminal color scheme is slightly brighter than other
-  primary colors. So it normalizes the colors.
+I prefer Black as the background color on projection screens to erase the
+bezel. Also, I prefer White as the text color for the best readability.
 
-Color               | Hex       | RGB                  | HSL                  |🎨
-------------------- | --------- | -------------------- | -------------------- | --------------------------
-Slides Foreground   | `#fff`    | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)`   | ![](plates/slides-foreground.gif)
-Slides Foreground 2 | `#808080` | `rgb(128, 128, 128)` | `hsl(0, 0%, 50%)`    | ![](plates/slides-foreground-2.gif)
-Slides Foreground 3 | `#404040` | `rgb(64, 64, 64)`    | `hsl(0, 0%, 25%)`    | ![](plates/slides-foreground-3.gif)
-Slides Background   | `#000`    | `rgb(0, 0, 0)`       | `hsl(0, 0%, 0%)`     | ![](plates/slides-background.gif)
-Slides Green        | `#5d7`    | `rgb(85, 221, 119)`  | `hsl(135, 62%, 87%)` | ![](plates/slides-green.gif)
-Slides Yellow       | `#fc7`    | `rgb(255, 204, 119)` | `hsl(37, 53%, 100%)` | ![](plates/slides-yellow.gif)
+The brightness of 6 hues should be normalized to be recognized at the same
+level. If they are not, some hues look like more important than other hues. By
+the way, some colors in the terminal color scheme are slightly brighter than
+other colors. Here I adjust them for brightness normalization.
+
+Color               | Hex       | RGB                  | HSL                   |🎨
+------------------- | --------- | -------------------- | --------------------- | ---------------------------------
+Slides Foreground   | `#fff`    | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)`    | ![](plates/slides-foreground.gif)
+Slides Foreground 2 | `#808080` | `rgb(128, 128, 128)` | `hsl(0, 0%, 50%)`     | ![](plates/slides-foreground-2.gif)
+Slides Foreground 3 | `#404040` | `rgb(64, 64, 64)`    | `hsl(0, 0%, 25%)`     | ![](plates/slides-foreground-3.gif)
+Slides Background   | `#000`    | `rgb(0, 0, 0)`       | `hsl(0, 0%, 0%)`      | ![](plates/slides-background.gif)
+Slides Blue         | `#58f`    | `rgb(85, 136, 255)`  | `hsl(222, 67%, 100%)` | ![](plates/slides-blue.gif)
+Slides Red          | `#e57`    | `rgb(238, 85, 119)`  | `hsl(347, 64%, 93%)`  | ![](plates/slides-red.gif)
+Slides Yellow       | `#fc7`    | `rgb(255, 204, 119)` | `hsl(37, 53%, 100%)`  | ![](plates/slides-yellow.gif)
+Slides Green        | `#5d7`    | `rgb(85, 221, 119)`  | `hsl(135, 62%, 87%)`  | ![](plates/slides-green.gif)
+Slides Violet       | `#a8f`    | `rgb(170, 136, 255)` | `hsl(257, 47%, 100%)` | ![](plates/slides-violet.gif)
+Slides Teal         | `#4dd`    | `rgb(68, 221, 221)`  | `hsl(180, 69%, 87%)`  | ![](plates/slides-teal.gif)
+
+Use "Slides Foreground" for the link but with underline.
 
 ## Showcase
 
