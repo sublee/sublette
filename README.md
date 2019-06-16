@@ -31,4 +31,4 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 ![](showcase/subl.ee.html.png)
 
-![](showcase/hangulize-specs.go.png)
+![](showcase/subpptx.go.png)
