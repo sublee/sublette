@@ -1,5 +1,7 @@
 # Sublette
 
+![](showcase/logo.png)
+
 A terminal color scheme.
 
 Color          | Hex       | RGB                  | HSL                   |🎨
