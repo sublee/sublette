@@ -2,7 +2,7 @@
 
 ![](showcase/logo.png)
 
-I've always loved coloring. Now it's time to design my color scheme.
+I've always loved coloring. Now it's time to design my color schemes.
 
 ## For Terminal (base)
 
