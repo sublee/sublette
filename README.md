@@ -31,6 +31,8 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 ### Showcase
 
+![](showcase/table.png)
+
 ![](showcase/torchgpipe.py.png)
 
 ![](showcase/subl.ee.html.png)
