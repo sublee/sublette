@@ -32,8 +32,8 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 ## For Slides
 
 The purpose of a color scheme for Terminal and Slides is different. I need only
-4 grayscale colors for text and background, and 6 hues--Blue, Red, Yellow,
-Green, Violet, Teal--for clear semantics.
+4 grayscale colors for text and background, and 6 hues--Blue, Red, Green,
+Yellow, Violet, Teal--for clear semantics.
 
 I prefer Black as the background color on projection screens to erase the
 bezel. Also, I prefer White as the text color for the best readability.
@@ -51,8 +51,8 @@ Slides Foreground 3 | `#404040` | `rgb(64, 64, 64)`    | `hsl(0, 0%, 25%)`     |
 Slides Background   | `#000`    | `rgb(0, 0, 0)`       | `hsl(0, 0%, 0%)`      | ![](plates/slides-background.gif)
 Slides Blue         | `#58f`    | `rgb(85, 136, 255)`  | `hsl(222, 67%, 100%)` | ![](plates/slides-blue.gif)
 Slides Red          | `#e57`    | `rgb(238, 85, 119)`  | `hsl(347, 64%, 93%)`  | ![](plates/slides-red.gif)
-Slides Yellow       | `#fc7`    | `rgb(255, 204, 119)` | `hsl(37, 53%, 100%)`  | ![](plates/slides-yellow.gif)
 Slides Green        | `#5d7`    | `rgb(85, 221, 119)`  | `hsl(135, 62%, 87%)`  | ![](plates/slides-green.gif)
+Slides Yellow       | `#fc7`    | `rgb(255, 204, 119)` | `hsl(37, 53%, 100%)`  | ![](plates/slides-yellow.gif)
 Slides Violet       | `#a8f`    | `rgb(170, 136, 255)` | `hsl(257, 47%, 100%)` | ![](plates/slides-violet.gif)
 Slides Teal         | `#4dd`    | `rgb(68, 221, 221)`  | `hsl(180, 69%, 87%)`  | ![](plates/slides-teal.gif)
 
