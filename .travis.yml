@@ -1,0 +1,33 @@
+language: python
+
+dist: xenial
+python:
+  - 3.7
+
+install:
+- pip install -r factory/requirements.txt
+
+before_script:
+- git checkout "$TRAVIS_BRANCH"
+- rm -f plates/*.gif
+- rm -f showcase/*.png
+
+script:
+- python factory/plates.py
+- python factory/codesnippets.py
+- python factory/kitsch.py
+
+after_success:
+- git add -A 'plates/*.gif'
+- git add -A 'showcase/*.png'
+- git commit -m 'Generate assets in Travis CI [ci skip]'
+- git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
+- git push deploy "$TRAVIS_BRANCH"
+
+branches:
+  only:
+  - master
+
+env:
+  global:
+    secure: "jBip2fJ8WaefWmvcaW2FodYI+T6t20ScizhtXcjpiw16Kn6U+uJsbzNgj/SFJZnY7MyFJhfremDeLplNpW8Fz5vzBsw1ZJM1aoOmYCt16dRl2Snfpe3wHpNLC7DgrJTkYKw4CQITe7ymuJvsOd5PdkOO4fqAjEvi4zibibm4sL9e3SjICf9DAq4+pjGch+VPsaZsuMj0/dvRCupzNLl4KoSohuShSs8qrQlFNS2sJcjjYRZXe1OAOoimeGXLOAZwp6oiGMC6OSzpp6XT4G56lD899chUUUIhfaWrdWK4OKuZacJzosbX8gVcUGmw94uHO4EAyLw8NGCkiRQdDlE3rwrVqAjmgSS/ZSffHFPjo1gSMhVquCgp5DqNRxT61lSetlaKu2L6N2vchpCsDoLCdVOS8OzzzPr8oiCajYtxhWyFacUo1LvLu0GECj2AsOynK2aBSzgJVspW8gHUW8s3uxQmwet9JRVPyptwUuRP8vzHXAah3D9xevfZGbavLjK2yol4EBjPoUNrWQV1G7AdOuU0Xju+9giaVTN9CAt/O7SxLWISK7u0IdJAK2voWcuHdhohzZFAWzgCwykrUPI3mAwbxi96rjKGXFmbbDwHdkfj5fGjg6Ml/4+vEyQP01GLM2Znq4+wU7O49fjqa0s0T5ViGnJ9dK6P2FHzoYpvxa0="
