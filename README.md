@@ -72,4 +72,4 @@ Use "Slides Foreground" for the link but with underline.
 
 ![](showcase/slides-people.png)
 
-![](showcase/pie-chart.png)
+![](showcase/slides-pie-chart.png)
