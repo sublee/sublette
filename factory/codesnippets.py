@@ -15,7 +15,7 @@ from sublette import Sublette
 
 HERE = os.path.dirname(__file__)
 OUTPUT_PATTERN = os.path.join(HERE, '../showcase/%s.png')
-CODESNIPPETS = os.path.join(HERE, 'codesnippets')
+INPUT_DIR = os.path.join(HERE, 'codesnippets')
 TEMPLATE = '''
 <html>
 <head>
@@ -48,11 +48,11 @@ TEMPLATE = '''
 formatter = HtmlFormatter(style=Sublette)
 font_config = weasyprint.fonts.FontConfiguration()
 
-for filename in os.listdir(CODESNIPPETS):
+for filename in os.listdir(INPUT_DIR):
     if filename.startswith('.'):
         continue
 
-    with open(os.path.join(CODESNIPPETS, filename), encoding='utf-8') as f:
+    with open(os.path.join(INPUT_DIR, filename), encoding='utf-8') as f:
         code = f.read()
 
     lexer = get_lexer_for_filename(filename)
@@ -67,6 +67,6 @@ for filename in os.listdir(CODESNIPPETS):
         'height': (lines+3) * 20,
     })
 
-    output = OUTPUT_PATTERN % filename
-    with open(output, 'wb') as f:
+    output_path = OUTPUT_PATTERN % filename
+    with open(output_path, 'wb') as f:
         html.write_png(f, font_config=font_config)
