@@ -70,4 +70,6 @@ Use "Slides Foreground" for the link but with underline.
 
 ![](showcase/slides-title.png)
 
+![](showcase/slides-people.png)
+
 ![](showcase/pie-chart.png)
