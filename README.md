@@ -2,7 +2,9 @@
 
 ![](showcase/logo.png)
 
-A terminal color scheme.
+I've always loved coloring. Now it's time to design my color scheme.
+
+## For Terminal (base)
 
 Color          | Hex       | RGB                  | HSL                   |🎨
 -------------- | --------- | -------------------- | --------------------- | --------------------------
@@ -26,6 +28,26 @@ Bright Cyan    | `#5fb`    | `rgb(85, 255, 187)`  | `hsl(156, 67%, 100%)` | ![](
 Bright White   | `#ffe`    | `rgb(255, 255, 238)` | `hsl(60, 7%, 100%)`   | ![](plates/bright-white.gif)
 
 Use "Foreground" and "Background" for the cursor and cursor text respectively.
+
+## For Slides
+
+Terminal and slides have different purpose. For slides, we need only few colors
+with clear meaning. This color scheme defines new foreground, background, and
+brightness normalized colors for slides.
+
+- I prefer the black and white as default colors on projection screens. It
+  erases the bezel and provides the best readability.
+- Yellow and Green in the terminal color scheme is slightly brighter than other
+  primary colors. So it normalizes the colors.
+
+Color               | Hex       | RGB                  | HSL                  |🎨
+------------------- | --------- | -------------------- | -------------------- | --------------------------
+Slides Foreground   | `#fff`    | `rgb(255, 255, 255)` | `hsl(0, 0%, 100%)`   | ![](plates/slides-foreground.gif)
+Slides Foreground 2 | `#808080` | `rgb(128, 128, 128)` | `hsl(0, 0%, 50%)`    | ![](plates/slides-foreground-2.gif)
+Slides Foreground 3 | `#404040` | `rgb(64, 64, 64)`    | `hsl(0, 0%, 25%)`    | ![](plates/slides-foreground-3.gif)
+Slides Background   | `#000`    | `rgb(0, 0, 0)`       | `hsl(0, 0%, 0%)`     | ![](plates/slides-background.gif)
+Slides Green        | `#5d7`    | `rgb(85, 221, 119)`  | `hsl(135, 62%, 87%)` | ![](plates/slides-green.gif)
+Slides Yellow       | `#fc7`    | `rgb(255, 204, 119)` | `hsl(37, 53%, 100%)` | ![](plates/slides-yellow.gif)
 
 ## Showcase
 
