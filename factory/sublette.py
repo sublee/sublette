@@ -21,12 +21,12 @@ def read_sublette():
 
     colors = {}
     for td_name in html.xpath('//table/tbody//td[1]'):
-        td_hex = td_name.getnext()
+        td_color = td_name.getnext()
 
         name = td_name.text_content()
-        hex = td_hex.text_content()
+        color = td_color.text_content()
 
-        colors[name] = hex
+        colors[name] = color
     return colors
 
 
