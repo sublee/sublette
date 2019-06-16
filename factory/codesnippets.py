@@ -22,7 +22,7 @@ TEMPLATE = '''
   <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
     @page {
-      size: 850px %(height)dpx;
+      size: %(width)dpx %(height)dpx;
       margin: 0;
       padding: 0;
     }
@@ -63,6 +63,7 @@ for filename in os.listdir(CODESNIPPETS):
     html = weasyprint.HTML(string=TEMPLATE % {
         'css': formatter.get_style_defs('body'),
         'html': highlighted,
+        'width': 880,  # adjusted for Github layout.
         'height': (lines+3) * 20,
     })
 
