@@ -29,6 +29,14 @@ Bright White   | `#ffe`    | `rgb(255, 255, 238)` | `hsl(60, 7%, 100%)`   | ![](
 
 Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
+### Showcase
+
+![](showcase/torchgpipe.py.png)
+
+![](showcase/subl.ee.html.png)
+
+![](showcase/subpptx.go.png)
+
 ## For Slides
 
 The purpose of a color scheme for Terminal and Slides is different. I need only
@@ -58,10 +66,6 @@ Slides Teal         | `#4dd`    | `rgb(68, 221, 221)`  | `hsl(180, 69%, 87%)`  |
 
 Use "Slides Foreground" for the link but with underline.
 
-## Showcase
+### Showcase
 
-![](showcase/torchgpipe.py.png)
-
-![](showcase/subl.ee.html.png)
-
-![](showcase/subpptx.go.png)
+![](showcase/pie-chart.png)
