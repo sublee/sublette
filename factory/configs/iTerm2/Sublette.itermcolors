@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Foreground Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Foreground]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Foreground]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Foreground]).17f</real>
+  </dict>
+
+  <key>Bold Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Foreground]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Foreground]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Foreground]).17f</real>
+  </dict>
+
+  <key>Background Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Background]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Background]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Background]).17f</real>
+  </dict>
+
+  <key>Cursor Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Foreground]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Foreground]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Foreground]).17f</real>
+  </dict>
+
+  <key>Cursor Text Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Background]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Background]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Background]).17f</real>
+  </dict>
+
+  <key>Selection Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Foreground]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Foreground]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Foreground]).17f</real>
+  </dict>
+
+  <key>Selected Text Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Background]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Background]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Background]).17f</real>
+  </dict>
+
+  <key>Ansi 0 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Black]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Black]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Black]).17f</real>
+  </dict>
+
+  <key>Ansi 1 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Red]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Red]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Red]).17f</real>
+  </dict>
+
+  <key>Ansi 2 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Green]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Green]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Green]).17f</real>
+  </dict>
+
+  <key>Ansi 3 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Yellow]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Yellow]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Yellow]).17f</real>
+  </dict>
+
+  <key>Ansi 4 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Blue]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Blue]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Blue]).17f</real>
+  </dict>
+
+  <key>Ansi 5 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Magenta]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Magenta]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Magenta]).17f</real>
+  </dict>
+
+  <key>Ansi 6 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Cyan]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Cyan]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Cyan]).17f</real>
+  </dict>
+
+  <key>Ansi 7 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[White]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[White]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[White]).17f</real>
+  </dict>
+
+  <key>Ansi 8 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Black]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Black]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Black]).17f</real>
+  </dict>
+
+  <key>Ansi 9 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Red]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Red]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Red]).17f</real>
+  </dict>
+
+  <key>Ansi 10 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Green]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Green]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Green]).17f</real>
+  </dict>
+
+  <key>Ansi 11 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Yellow]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Yellow]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Yellow]).17f</real>
+  </dict>
+
+  <key>Ansi 12 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Blue]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Blue]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Blue]).17f</real>
+  </dict>
+
+  <key>Ansi 13 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Magenta]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Magenta]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Magenta]).17f</real>
+  </dict>
+
+  <key>Ansi 14 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright Cyan]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright Cyan]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright Cyan]).17f</real>
+  </dict>
+
+  <key>Ansi 15 Color</key>
+  <dict>
+    <key>Red Component</key>
+    <real>%(rf[Bright White]).17f</real>
+    <key>Green Component</key>
+    <real>%(gf[Bright White]).17f</real>
+    <key>Blue Component</key>
+    <real>%(bf[Bright White]).17f</real>
+  </dict>
+</dict>
+</plist>
