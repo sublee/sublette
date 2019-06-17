@@ -20,7 +20,7 @@ TEMPLATE = '''
 <html>
 <head>
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:500);
     @page {
       size: %(width)dpx %(height)dpx;
       margin: 0;
@@ -28,12 +28,13 @@ TEMPLATE = '''
     }
     body {
       margin: 0;
-      padding: 10px 30px;
+      padding: 15px 45px;
     }
     pre {
       font-family: "Roboto Mono", monospace;
-      font-size: 16px;
-      line-height: 20px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
       tab-size: 4;
     }
   </style>
@@ -66,8 +67,8 @@ for filename in os.listdir(INPUT_DIR):
     html = weasyprint.HTML(string=TEMPLATE % {
         'css': formatter.get_style_defs('body'),
         'html': highlighted,
-        'width': (columns+6) * 10,
-        'height': (rows+2) * 20,
+        'width': (columns+6) * 15,
+        'height': (rows+2) * 30,
     })
 
     output_path = OUTPUT_PATTERN % filename
