@@ -9,12 +9,8 @@ from pathlib import Path
 from sublette import sublette
 
 
-# %(Color)s = #rrggbb or #rgb
-# %(rgb[Color])s = 11,22,33
 vars = {}
 for name, color in sublette.items():
-    vars[name] = color
-
     if len(color) == 4:
         r = int(color[1]*2, base=16)
         g = int(color[2]*2, base=16)
@@ -24,7 +20,24 @@ for name, color in sublette.items():
         g = int(color[3:5], base=16)
         b = int(color[5:7], base=16)
 
+    # %(Color)s = #0b1621
+    vars[name] = color
+
+    # %(rgb[Color])s = 11,22,33
+    # %(r[Color])s = 11
+    # %(g[Color])s = 22
+    # %(b[Color])s = 33
     vars['rgb[%s]' % name] = '%d,%d,%d' % (r, g, b)
+    vars['r[%s]' % name] = str(r)
+    vars['g[%s]' % name] = str(g)
+    vars['b[%s]' % name] = str(b)
+
+    # %(rf[Color])s = 0.0431372549019608
+    # %(gf[Color])s = 0.0862745098039216
+    # %(bf[Color])s = 0.0862745098039216
+    vars['rf[%s]' % name] = r/255
+    vars['gf[%s]' % name] = g/255
+    vars['bf[%s]' % name] = b/255
 
 
 # Generate configurations.
