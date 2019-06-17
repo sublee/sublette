@@ -50,3 +50,5 @@ for filename in os.listdir(INPUT_DIR):
 
     output_path = OUTPUT_PATTERN % filename.rpartition('.psd')[0]
     img.save(output_path)
+
+    print(os.path.relpath(output_path, os.path.curdir))

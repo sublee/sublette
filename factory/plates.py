@@ -14,7 +14,10 @@ HERE = os.path.dirname(__file__)
 OUTPUT_PATTERN = os.path.join(HERE, '../plates/%s.gif')
 
 for name, color in sublette.items():
-    output = OUTPUT_PATTERN % name.lower().replace(' ', '-')
+    output_path = OUTPUT_PATTERN % name.lower().replace(' ', '-')
+
     img = Image.new('RGB', (18, 18), color)
     img.convert('P')
-    img.save(output)
+    img.save(output_path)
+
+    print(os.path.relpath(output_path, os.path.curdir))

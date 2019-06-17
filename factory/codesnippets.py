@@ -73,3 +73,5 @@ for filename in os.listdir(INPUT_DIR):
     output_path = OUTPUT_PATTERN % filename
     with open(output_path, 'wb') as f:
         html.write_png(f, font_config=font_config)
+
+    print(os.path.relpath(output_path, os.path.curdir))
