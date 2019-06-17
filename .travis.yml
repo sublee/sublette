@@ -9,8 +9,8 @@ install:
 
 before_script:
 - git checkout "$TRAVIS_BRANCH"
-- rm -f plates/*.gif
-- rm -f showcase/*.png
+- rm -f plates/*
+- rm -f showcase/*
 - rm -rf configs/*
 
 script:
@@ -20,8 +20,8 @@ script:
 - python factory/configs.py
 
 after_success:
-- git add -A 'plates/*.gif'
-- git add -A 'showcase/*.png'
+- git add -A 'plates/*'
+- git add -A 'showcase/*'
 - git add -A 'configs/*'
 - git commit -m 'Generate assets in Travis CI [ci skip]'
 - git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
