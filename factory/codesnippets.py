@@ -58,13 +58,16 @@ for filename in os.listdir(INPUT_DIR):
     lexer = get_lexer_for_filename(filename)
     lexer.add_filter(Sublette.filter())
     highlighted = highlight(code, lexer, formatter)
-    lines = code.count('\n')
+
+    lines = code.split('\n')
+    columns = max(len(line) for line in lines)
+    rows = len(lines)
 
     html = weasyprint.HTML(string=TEMPLATE % {
         'css': formatter.get_style_defs('body'),
         'html': highlighted,
-        'width': 880,  # adjusted for Github layout.
-        'height': (lines+3) * 20,
+        'width': (columns+6) * 10,
+        'height': (rows+2) * 20,
     })
 
     output_path = OUTPUT_PATTERN % filename
