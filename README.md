@@ -31,13 +31,16 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 ### Showcase
 
-![](showcase/table.png)
-
-![](showcase/torchgpipe.py.png)
-
-![](showcase/subl.ee.html.png)
-
-![](showcase/subpptx.go.png)
+<table>
+  <tr>
+    <td><img src="showcase/table.png" /></td>
+    <td><img src="showcase/subl.ee.html.png" /></td>
+  </tr>
+  <tr>
+    <td><img src="showcase/torchgpipe.py.png" /></td>
+    <td><img src="showcase/subpptx.go.png" /></td>
+  </tr>
+</table>
 
 ## For Slides
 
@@ -70,8 +73,10 @@ Use "Slides Foreground" for the link but with underline.
 
 ### Showcase
 
-![](showcase/slides-title.png)
-
-![](showcase/slides-people.png)
-
-![](showcase/slides-pie-chart.png)
+<table>
+  <tr>
+    <td><img src="showcase/slides-title.png" /></td>
+    <td><img src="showcase/slides-people.png" /></td>
+    <td><img src="showcase/slides-pie-chart.png" /></td>
+  </tr>
+</table>
