@@ -33,7 +33,7 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 <table>
   <tr>
-    <td><img src="showcase/table.png" /></td>
+    <td width="50%"><img src="showcase/table.png" /></td>
     <td><img src="showcase/subl.ee.html.png" /></td>
   </tr>
   <tr>
