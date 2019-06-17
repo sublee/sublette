@@ -11,15 +11,18 @@ before_script:
 - git checkout "$TRAVIS_BRANCH"
 - rm -f plates/*.gif
 - rm -f showcase/*.png
+- rm -rf configs/*
 
 script:
 - python factory/plates.py
 - python factory/codesnippets.py
 - python factory/kitsch.py
+- python factory/configs.py
 
 after_success:
 - git add -A 'plates/*.gif'
 - git add -A 'showcase/*.png'
+- git add -A 'configs/*'
 - git commit -m 'Generate assets in Travis CI [ci skip]'
 - git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
 - git push deploy "$TRAVIS_BRANCH"
