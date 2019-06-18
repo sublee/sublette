@@ -1,0 +1,16 @@
+{
+  "name": "hyper-sublette",
+  "description": "Sublette for Hyper",
+  "author": "Heungsub Lee <sub@subl.ee> (https://subl.ee/)",
+  "license": "MIT",
+  "repository": "sublee/sublette",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "sublette",
+    "hyper",
+    "hyper-theme",
+    "hyper-sublette"
+  ]
+}
