@@ -28,9 +28,9 @@ for name, color in sublette.items():
     # %(g[Color])s = 22
     # %(b[Color])s = 33
     vars['rgb[%s]' % name] = '%d,%d,%d' % (r, g, b)
-    vars['r[%s]' % name] = str(r)
-    vars['g[%s]' % name] = str(g)
-    vars['b[%s]' % name] = str(b)
+    vars['r[%s]' % name] = r
+    vars['g[%s]' % name] = g
+    vars['b[%s]' % name] = b
 
     # %(rf[Color])s = 0.0431372549019608
     # %(gf[Color])s = 0.0862745098039216
