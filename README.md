@@ -12,6 +12,7 @@ I've always loved coloring. Now it's time to design my color schemes.
 - [Hyper](configs/Hyper)
 - [PuTTY](configs/PuTTY)
 - [iTerm2](configs/iTerm2)
+- [PyCharm or IntelliJ IDEA](configs/IntelliJ)
 
 ## For Terminal (base)
 
