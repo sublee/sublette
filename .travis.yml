@@ -6,7 +6,7 @@ python:
 
 install:
 - pip install -r factory/requirements.txt
-- apt-get install nodejs
+- sudo apt-get install nodejs
 - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
 
 before_script:
@@ -22,16 +22,23 @@ script:
 - python factory/configs.py
 
 after_success:
-# deploy assets
+# stage assets
 - git add -A 'plates/*'
 - git add -A 'showcase/*'
 - git add -A 'configs/*'
+
+# publish configs
+- >
+  find configs -name 'publish.sh' |
+  xargs -I{} bash -c
+  'cd $(dirname {}); git diff --cached --quiet . || (echo {}; bash publish.sh)'
+#                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#                      └─ Check if this directory has been changed.
+
+# deploy assets
 - git commit -m 'Generate assets in Travis CI [ci skip]'
 - git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
 - git push deploy "$TRAVIS_BRANCH"
-
-# deploy configs
-- find configs -name 'deploy.sh' | xargs -I{} bash -c 'cd $(dirname {}) && bash deploy.sh'
 
 branches:
   only:
