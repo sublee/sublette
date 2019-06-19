@@ -1,4 +1,5 @@
-PREV_VERSION="$(npm show hyper-sublette-test version 2>/dev/null || echo 0.0.0)"
+# Publish hyper-sublette to NPM.
+PREV_VERSION="$(npm show hyper-sublette version 2>/dev/null || echo 0.0.0)"
 
 MAJOR="$(echo "$PREV_VERSION" | awk -F. '{ print $1 }')"
 MINOR="$(echo "$PREV_VERSION" | awk -F. '{ print $2 }')"
