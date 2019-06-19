@@ -13,6 +13,7 @@ I've always loved coloring. Now it's time to design my color schemes.
 - [PuTTY](configs/PuTTY)
 - [iTerm2](configs/iTerm2)
 - [PyCharm or IntelliJ IDEA](configs/IntelliJ)
+- [Slack](configs/Slack)
 
 ## For Terminal (base)
 
