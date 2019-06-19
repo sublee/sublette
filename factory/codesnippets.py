@@ -50,6 +50,7 @@ TEMPLATE = '''
 </html>
 '''
 
+
 formatter = HtmlFormatter(style=Sublette)
 font_config = weasyprint.fonts.FontConfiguration()
 

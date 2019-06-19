@@ -8,7 +8,6 @@ from pathlib import Path
 
 from sublette import sublette
 
-
 vars = {}
 for name, color in sublette.items():
     if len(color) == 4:
