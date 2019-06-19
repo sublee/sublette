@@ -198,12 +198,12 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="%(hex[White])s" />
+        <option name="FOREGROUND" value="%(hex[Red])s" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="FOREGROUND" value="%(hex[Bright Magenta])s" />
+        <option name="FOREGROUND" value="%(hex[Magenta])s" />
         <option name="FONT_TYPE" value="3" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -328,10 +328,9 @@
     </option>
     <option name="ERRORS_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="%(hex[Background])s" />
-        <option name="BACKGROUND" value="%(hex[Red])s" />
+        <option name="EFFECT_COLOR" value="%(hex[Red])s" />
         <option name="ERROR_STRIPE_COLOR" value="%(hex[Red])s" />
-        <option name="EFFECT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -758,10 +757,9 @@
     </option>
     <option name="WARNING_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="%(hex[Background])s" />
-        <option name="BACKGROUND" value="%(hex[Yellow])s" />
+        <option name="EFFECT_COLOR" value="%(hex[Yellow])s" />
         <option name="ERROR_STRIPE_COLOR" value="%(hex[Yellow])s" />
-        <option name="EFFECT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
