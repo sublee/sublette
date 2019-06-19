@@ -11,16 +11,16 @@ from sublette import sublette
 vars = {}
 for name, color in sublette.items():
     if len(color) == 4:
-        r = int(color[1]*2, base=16)
-        g = int(color[2]*2, base=16)
-        b = int(color[3]*2, base=16)
-    else:
-        r = int(color[1:3], base=16)
-        g = int(color[3:5], base=16)
-        b = int(color[5:7], base=16)
+        color = '#' + color[1]*2 + color[2]*2 + color[3]*2
+
+    r = int(color[1:3], base=16)
+    g = int(color[3:5], base=16)
+    b = int(color[5:7], base=16)
 
     # %(Color)s = #0b1621
+    # %(hex[Color])s = 0b1621
     vars[name] = color
+    vars['hex[%s]' % name] = color[1:]
 
     # %(rgb[Color])s = 11,22,33
     # %(r[Color])s = 11
