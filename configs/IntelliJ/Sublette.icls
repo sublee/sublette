@@ -198,12 +198,12 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="f5f5da" />
+        <option name="FOREGROUND" value="ee5577" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="FOREGROUND" value="aa88ff" />
+        <option name="FOREGROUND" value="ff77cc" />
         <option name="FONT_TYPE" value="3" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -328,10 +328,9 @@
     </option>
     <option name="ERRORS_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="202535" />
-        <option name="BACKGROUND" value="ee5577" />
+        <option name="EFFECT_COLOR" value="ee5577" />
         <option name="ERROR_STRIPE_COLOR" value="ee5577" />
-        <option name="EFFECT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -758,10 +757,9 @@
     </option>
     <option name="WARNING_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="202535" />
-        <option name="BACKGROUND" value="ffdd88" />
+        <option name="EFFECT_COLOR" value="ffdd88" />
         <option name="ERROR_STRIPE_COLOR" value="ffdd88" />
-        <option name="EFFECT_TYPE" value="2" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="WRITE_IDENTIFIER_UNDER_CARET_ATTRIBUTES">
