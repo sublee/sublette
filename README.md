@@ -33,12 +33,12 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
 
 <table>
   <tr>
-    <td width="50%"><img src="showcase/colors.ansi.png" /></td>
+    <td><img src="showcase/colors.ansi.png" /></td>
     <td><img src="showcase/subl.ee.html.png" /></td>
   </tr>
   <tr>
-    <td><img src="showcase/torchgpipe.py.png" /></td>
     <td><img src="showcase/subpptx.go.png" /></td>
+    <td><img src="showcase/torchgpipe.py.png" /></td>
   </tr>
 </table>
 
