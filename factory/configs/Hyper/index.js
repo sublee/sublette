@@ -31,6 +31,10 @@ exports.decorateConfig = config => {
     css: `
       ${config.css || ''}
 
+      .tabs_title, .header_windowHeader {
+        color: %(Foreground)s;
+      }
+
       .tabs_list .tab_tab {
         background: %(Black)s;
         color: %(Bright Black)s;
@@ -38,7 +42,7 @@ exports.decorateConfig = config => {
 
       .tabs_list .tab_active {
         background: transparent;
-        color: inherit;
+        color: %(Foreground)s;
       }
 
       .tabs_list .tab_hasActivity {
