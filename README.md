@@ -4,6 +4,12 @@
 
 I've always loved coloring. Now it's time to design my color schemes.
 
+## Tool Configurations
+
+- [Hyper](configs/Hyper)
+- [PuTTY](configs/PuTTY)
+- [iTerm2](configs/iTerm2)
+
 ## For Terminal (base)
 
 Color          | Hex       | RGB                  | HSL                   |🎨
