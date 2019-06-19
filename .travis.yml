@@ -6,6 +6,8 @@ python:
 
 install:
 - pip install -r factory/requirements.txt
+- apt-get install nodejs
+- echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
 
 before_script:
 - git checkout "$TRAVIS_BRANCH"
@@ -20,6 +22,7 @@ script:
 - python factory/configs.py
 
 after_success:
+# deploy assets
 - git add -A 'plates/*'
 - git add -A 'showcase/*'
 - git add -A 'configs/*'
@@ -27,10 +30,14 @@ after_success:
 - git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
 - git push deploy "$TRAVIS_BRANCH"
 
+# deploy configs
+- find configs -name 'deploy.sh' | xargs -I{} bash -c 'cd $(dirname {}) && bash deploy.sh'
+
 branches:
   only:
   - master
 
 env:
   global:
-    secure: "jBip2fJ8WaefWmvcaW2FodYI+T6t20ScizhtXcjpiw16Kn6U+uJsbzNgj/SFJZnY7MyFJhfremDeLplNpW8Fz5vzBsw1ZJM1aoOmYCt16dRl2Snfpe3wHpNLC7DgrJTkYKw4CQITe7ymuJvsOd5PdkOO4fqAjEvi4zibibm4sL9e3SjICf9DAq4+pjGch+VPsaZsuMj0/dvRCupzNLl4KoSohuShSs8qrQlFNS2sJcjjYRZXe1OAOoimeGXLOAZwp6oiGMC6OSzpp6XT4G56lD899chUUUIhfaWrdWK4OKuZacJzosbX8gVcUGmw94uHO4EAyLw8NGCkiRQdDlE3rwrVqAjmgSS/ZSffHFPjo1gSMhVquCgp5DqNRxT61lSetlaKu2L6N2vchpCsDoLCdVOS8OzzzPr8oiCajYtxhWyFacUo1LvLu0GECj2AsOynK2aBSzgJVspW8gHUW8s3uxQmwet9JRVPyptwUuRP8vzHXAah3D9xevfZGbavLjK2yol4EBjPoUNrWQV1G7AdOuU0Xju+9giaVTN9CAt/O7SxLWISK7u0IdJAK2voWcuHdhohzZFAWzgCwykrUPI3mAwbxi96rjKGXFmbbDwHdkfj5fGjg6Ml/4+vEyQP01GLM2Znq4+wU7O49fjqa0s0T5ViGnJ9dK6P2FHzoYpvxa0="
+  - secure: "jBip2fJ8WaefWmvcaW2FodYI+T6t20ScizhtXcjpiw16Kn6U+uJsbzNgj/SFJZnY7MyFJhfremDeLplNpW8Fz5vzBsw1ZJM1aoOmYCt16dRl2Snfpe3wHpNLC7DgrJTkYKw4CQITe7ymuJvsOd5PdkOO4fqAjEvi4zibibm4sL9e3SjICf9DAq4+pjGch+VPsaZsuMj0/dvRCupzNLl4KoSohuShSs8qrQlFNS2sJcjjYRZXe1OAOoimeGXLOAZwp6oiGMC6OSzpp6XT4G56lD899chUUUIhfaWrdWK4OKuZacJzosbX8gVcUGmw94uHO4EAyLw8NGCkiRQdDlE3rwrVqAjmgSS/ZSffHFPjo1gSMhVquCgp5DqNRxT61lSetlaKu2L6N2vchpCsDoLCdVOS8OzzzPr8oiCajYtxhWyFacUo1LvLu0GECj2AsOynK2aBSzgJVspW8gHUW8s3uxQmwet9JRVPyptwUuRP8vzHXAah3D9xevfZGbavLjK2yol4EBjPoUNrWQV1G7AdOuU0Xju+9giaVTN9CAt/O7SxLWISK7u0IdJAK2voWcuHdhohzZFAWzgCwykrUPI3mAwbxi96rjKGXFmbbDwHdkfj5fGjg6Ml/4+vEyQP01GLM2Znq4+wU7O49fjqa0s0T5ViGnJ9dK6P2FHzoYpvxa0="
+  - secure: "haPpNwTlfv39u1QQ5WLiM3l1SxvNt3f27qV4ZRBAHajTBafXSy4GrkNV9U02jci6HlkW21MPcF6v6ndNM6cPtrjKh6egc2f5rJo+hM0uIzNnvbZNUsjEC5IDfil12c8FbucwlaMQagqX879yTLueSOE2VxjVN1Tyr19Fq199erNyDWDZiJ9i6/a3s2MIF80isj+anMyRkvdaWUov0ycDStlDRbpeQRmlznSQOj88Og0uJL+BdOT2d1JHf3QkD9UU8rkky3gvh1oJDyInmUJBMAyL3t//E5hCtNkF5K53R8IsMqcXLS4udJd9Qqc6xQSOuQZne2LGt3/Zx5ninEMn4A5w3X/g0iVcVHRu95FmX+fMdfUBONb302csXANJqSfvoSPLxfPy+Q4nn8whlStu4S09sdLucPLAeADNQ8fwbBco8bKSsWAck0bAdphD3uP548ujBge7Aiw/o4OkJ9KN3WTqkHFWrtEMr6niq1WVcPPtlhXbp0vzAg/p5sbKJIHb/UFVsalHzZ2wGKv5Yvss98eBas4tkM7ghlbJj5h5CA8j8aTlicx+5PpWKo5yasNFFy/Q0cZycCyx0kpnhUjkttAHK3h4mCoP1bRdYp7ozmGKqFCQpKHpC4cMpJjYnn6tcUmeeSm8CGUd9m4iyeII0UN+12TaCInLhjknMKYFZZs="
