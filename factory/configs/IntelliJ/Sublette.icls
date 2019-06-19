@@ -1,10 +1,10 @@
-<scheme name="Sublette-dev" version="142" parent_scheme="Darcula">
+<scheme name="Sublette" version="142" parent_scheme="Darcula">
   <metaInfo>
     <property name="created">2019-06-20T01:08:25</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2019.1.3.0.0</property>
     <property name="modified">2019-06-20T01:08:32</property>
-    <property name="originalScheme">Sublette-dev</property>
+    <property name="originalScheme">Sublette</property>
   </metaInfo>
   <colors>
     <option name="CARET_COLOR" value="" />
