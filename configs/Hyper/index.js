@@ -5,22 +5,22 @@ exports.decorateConfig = config => {
 
     colors: {
       black:   "#253045",
-      red:     "#e57",
-      green:   "#5e7",
-      yellow:  "#fd8",
-      blue:    "#58f",
-      magenta: "#f7c",
-      cyan:    "#4ee",
+      red:     "#ee5577",
+      green:   "#55ee77",
+      yellow:  "#ffdd88",
+      blue:    "#5588ff",
+      magenta: "#ff77cc",
+      cyan:    "#44eeee",
       white:   "#f5f5da",
 
       lightBlack:   "#405570",
-      lightRed:     "#e65",
-      lightGreen:   "#9e7",
-      lightYellow:  "#ff7",
-      lightBlue:    "#7bf",
-      lightMagenta: "#a8f",
-      lightCyan:    "#5fb",
-      lightWhite:   "#ffe",
+      lightRed:     "#ee6655",
+      lightGreen:   "#99ee77",
+      lightYellow:  "#ffff77",
+      lightBlue:    "#77bbff",
+      lightMagenta: "#aa88ff",
+      lightCyan:    "#55ffbb",
+      lightWhite:   "#ffffee",
     },
 
     cursorColor:       "#ccced0",
@@ -46,7 +46,7 @@ exports.decorateConfig = config => {
       }
 
       .tabs_list .tab_hasActivity {
-        color: #e57;
+        color: #ee5577;
       }
     `
   })
