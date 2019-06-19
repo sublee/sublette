@@ -4,8 +4,11 @@ import os
 import lxml.html
 from markdown import Markdown
 from pygments.filter import simplefilter
+from pygments.lexers import Python3Lexer
 from pygments.style import Style
 from pygments.token import Token
+
+import ansi
 
 __all__ = ['sublette', 'Sublette']
 
@@ -60,8 +63,15 @@ class Sublette(Style):
         Token.Text:                sublette['Magenta'],
     }
 
+    # Inject Token.ANSI styles.
+    ansi.inject(styles, sublette)
+
     @simplefilter
     def filter(self, lexer, stream, options):
+        if not isinstance(lexer, Python3Lexer):
+            yield from stream
+            return
+
         for ttype, value in stream:
             if ttype is Token.Name.Decorator and value.startswith('@'):
                 yield Token.Name.Decorator.Sign, '@'

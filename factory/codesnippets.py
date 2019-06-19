@@ -6,11 +6,12 @@ Usage:
 """
 import os
 
-from pygments import highlight
-from pygments.lexers import get_lexer_for_filename
-from pygments.formatters import HtmlFormatter
 import weasyprint
+from pygments import highlight
+from pygments.formatters import HtmlFormatter, NullFormatter
+from pygments.lexers import get_lexer_for_filename
 
+from ansi import ANSILexer
 from sublette import Sublette
 
 HERE = os.path.dirname(__file__)
@@ -37,6 +38,9 @@ TEMPLATE = '''
       line-height: 30px;
       tab-size: 4;
     }
+    pre span {
+        display: inline-block;
+    }
   </style>
   <style>%(css)s</style>
 </head>
@@ -56,23 +60,27 @@ for filename in os.listdir(INPUT_DIR):
     with open(os.path.join(INPUT_DIR, filename), encoding='utf-8') as f:
         code = f.read()
 
-    lexer = get_lexer_for_filename(filename)
+    if filename.endswith('.ansi'):
+        lexer = ANSILexer()
+    else:
+        lexer = get_lexer_for_filename(filename)
     lexer.add_filter(Sublette.filter())
     highlighted = highlight(code, lexer, formatter)
 
-    lines = code.split('\n')
-    columns = max(len(line) for line in lines)
+    # Detect size by output instead of input.
+    text = highlight(code, lexer, NullFormatter())
+    lines = text.split('\n')
+    columns = max(len(line.rstrip()) for line in lines)
     rows = len(lines)
 
     html = weasyprint.HTML(string=TEMPLATE % {
         'css': formatter.get_style_defs('body'),
         'html': highlighted,
-        'width': (columns+6) * 15,
+        'width': (columns+4) * 15,
         'height': (rows+2) * 30,
     })
 
     output_path = OUTPUT_PATTERN % filename
     with open(output_path, 'wb') as f:
         html.write_png(f, font_config=font_config)
-
     print(os.path.relpath(output_path, os.path.curdir))
