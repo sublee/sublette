@@ -25,7 +25,7 @@ exports.decorateConfig = config => {
 
     cursorColor:       "%(Foreground)s",
     cursorAccentColor: "%(Background)s",
-    selectionColor:    "rgba(%(rgb[Blue])s, 0.3)",
+    selectionColor:    "rgba(%(rgb[Bright Blue])s, 0.3)",
 
     borderColor: "%(Black)s",
     css: `
