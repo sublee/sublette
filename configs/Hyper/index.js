@@ -41,7 +41,7 @@ exports.decorateConfig = config => {
       }
 
       .tabs_list .tab_active {
-        background: transparent;
+        background: #202535;
         color: #ccced0;
       }
 
