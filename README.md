@@ -53,6 +53,21 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
   </tr>
 </table>
 
+## For IDEs
+
+Usually, IDEs have configurations of highlight colors to indicate hints. The
+highlight colors should be dimmer than the text colors. Here I define dim
+colors for the use.
+
+Color       | Hex       | RGB                  | HSL                   |🎨
+----------- | --------- | -------------------- | --------------------- | -----------------------
+Dim Red     | `#534`    | `rgb(85, 51, 68)`    | `hsl(330, 40%, 33%)`  | ![](plates/dim-red.png)
+Dim Green   | `#454`    | `rgb(68, 85, 68)`    | `hsl(120, 20%, 33%)`  | ![](plates/dim-green.png)
+Dim Yellow  | `#555045` | `rgb(85, 80, 69)`    | `hsl(41, 19%, 33%)`   | ![](plates/dim-yellow.png)
+Dim Blue    | `#347`    | `rgb(51, 68, 119)`   | `hsl(225, 57%, 47%)`  | ![](plates/dim-blue.png)
+Dim Magenta | `#546`    | `rgb(85, 68, 102)`   | `hsl(270, 33%, 40%)`  | ![](plates/dim-magenta.png)
+Dim Cyan    | `#356`    | `rgb(51, 85, 102)`   | `hsl(200, 50%, 40%)`  | ![](plates/dim-cyan.png)
+
 ## For Slides
 
 The purpose of a color scheme for Terminal and Slides is different. I need only
