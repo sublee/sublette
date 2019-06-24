@@ -60,7 +60,8 @@ highlight colors should be dimmer than the text colors. Here I define dim
 colors for the use.
 
 Color       | Hex       | RGB                  | HSL                   |🎨
------------ | --------- | -------------------- | --------------------- | -----------------------
+----------- | --------- | -------------------- | --------------------- | -------------------
+Dim         | `#96a0aa` | `rgb(150, 160, 170)` | `hsl(210, 12%, 67%)`  | ![](plates/dim.png)
 Dim Red     | `#534`    | `rgb(85, 51, 68)`    | `hsl(330, 40%, 33%)`  | ![](plates/dim-red.png)
 Dim Green   | `#454`    | `rgb(68, 85, 68)`    | `hsl(120, 20%, 33%)`  | ![](plates/dim-green.png)
 Dim Yellow  | `#555045` | `rgb(85, 80, 69)`    | `hsl(41, 19%, 33%)`   | ![](plates/dim-yellow.png)
