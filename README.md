@@ -47,7 +47,10 @@ Use "Foreground" and "Background" for the cursor and cursor text respectively.
     <td><img src="showcase/colors.ansi.png" /></td>
     <td><img src="showcase/subl.ee.html.png" /></td>
   </tr>
+</table>
+<table>
   <tr>
+    <td><img src="showcase/gpustat.ansi.png" /></td>
     <td><img src="showcase/subpptx.go.png" /></td>
     <td><img src="showcase/torchgpipe.py.png" /></td>
   </tr>
