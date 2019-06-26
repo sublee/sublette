@@ -1,6 +1,6 @@
 # Sublette
 
-![](https://img.shields.io/badge/theme-sublette-%2358f.svg?style=flat-square)
+[![Sublette](https://img.shields.io/badge/theme-sublette-%2358f.svg?style=flat-square)](https://github.com/sublee/sublette)
 [![Build Status](https://img.shields.io/travis/sublee/sublette.svg?style=flat-square)](https://travis-ci.org/sublee/sublette)
 
 ![](showcase/logo.png)
