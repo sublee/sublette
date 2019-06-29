@@ -14,7 +14,7 @@ I've always loved coloring. Now it's time to design my color schemes.
 - [iTerm2](configs/iTerm2)
 - [PyCharm or IntelliJ IDEA](configs/IntelliJ)
 - [Slack](configs/Slack)
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=minmul117.sublette) by [Park GiSung](https://github.com/minmul117)
+- [Visual Studio Code](https://github.com/minmul117/vscode-sublette) by [Park GiSung](https://github.com/minmul117)
 
 ## For Terminal (base)
 
