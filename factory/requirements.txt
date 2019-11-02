@@ -11,7 +11,7 @@ lxml==4.3.4
 Markdown==3.1.1
 packbits==0.6
 pdfrw==0.4
-Pillow==5.4.1
+Pillow==6.2.0
 psd-tools==1.8.20
 pycparser==2.19
 Pygments==2.4.2
