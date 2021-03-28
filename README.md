@@ -15,6 +15,7 @@ I've always loved coloring. Now it's time to design my color schemes.
 - [PyCharm or IntelliJ IDEA](configs/IntelliJ)
 - [Slack](configs/Slack)
 - [Visual Studio Code](https://github.com/minmul117/vscode-sublette) by [Park GiSung](https://github.com/minmul117)
+- [Windows Terminal](https://windowsterminalthemes.dev/?theme=Sublette)
 
 ## For Terminal (base)
 
