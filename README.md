@@ -67,7 +67,7 @@ colors for the use.
 Color       | Hex       | RGB                  | HSL                   |🎨
 ----------- | --------- | -------------------- | --------------------- | -------------------
 Dim         | `#96a0aa` | `rgb(150, 160, 170)` | `hsl(210, 12%, 67%)`  | ![](plates/dim.png)
-Dimmer      | `#678`    | `rgb(102, 119, 136)` | `hsl(210, 14, 46%)`   | ![](plates/dimmer.png)
+Dimmer      | `#678`    | `rgb(102, 119, 136)` | `hsl(210, 14%, 46%)`  | ![](plates/dimmer.png)
 Dim Red     | `#534`    | `rgb(85, 51, 68)`    | `hsl(330, 40%, 33%)`  | ![](plates/dim-red.png)
 Dim Green   | `#454`    | `rgb(68, 85, 68)`    | `hsl(120, 20%, 33%)`  | ![](plates/dim-green.png)
 Dim Yellow  | `#555045` | `rgb(85, 80, 69)`    | `hsl(41, 19%, 33%)`   | ![](plates/dim-yellow.png)
@@ -122,6 +122,6 @@ Bright White | `#ffe`    | `rgb(255, 255, 238)` | `hsl(60, 7%, 100%)`   | ![](pl
 White        | `#f5f5da` | `rgb(245, 245, 218)` | `hsl(60, 11%, 96%)`   | ![](plates/white.png)
 Foreground   | `#ccced0` | `rgb(204, 206, 208)` | `hsl(210, 2%, 82%)`   | ![](plates/foreground.png)
 Dim          | `#96a0aa` | `rgb(150, 160, 170)` | `hsl(210, 12%, 67%)`  | ![](plates/dim.png)
-Dimmer       | `#678`    | `rgb(102, 119, 136)` | `hsl(210, 14, 46%)`   | ![](plates/dimmer.png)
+Dimmer       | `#678`    | `rgb(102, 119, 136)` | `hsl(210, 14%, 46%)`  | ![](plates/dimmer.png)
 Bright Black | `#405570` | `rgb(64, 85, 112)`   | `hsl(214, 43%, 44%)`  | ![](plates/bright-black.png)
 Black        | `#253045` | `rgb(37, 48, 69)`    | `hsl(219, 46%, 27%)`  | ![](plates/black.png)
