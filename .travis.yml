@@ -2,7 +2,7 @@ language: python
 
 dist: xenial
 python:
-  - 3.7
+- 3.7
 
 install:
 - pip install -r factory/requirements.txt
@@ -34,11 +34,6 @@ after_success:
   'cd $(dirname {}); git diff --cached --quiet . || (echo {}; bash publish.sh)'
 #                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #                      └─ Check if this directory has been changed.
-
-# deploy assets
-- git commit -m 'Generate assets in Travis CI [ci skip]'
-- git remote add deploy "https://$GITHUB_TOKEN@github.com/sublee/sublette.git"
-- git push deploy "$TRAVIS_BRANCH"
 
 branches:
   only:
